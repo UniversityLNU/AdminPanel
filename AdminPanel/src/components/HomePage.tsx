@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 const HomePage = () => {
   return (
@@ -16,7 +17,7 @@ const HomePage = () => {
       </div>
       <div className="absolute z-20 w-full flex flex-col items-center top-[78px] gap-[40px]">
       <div className="  w-[219px] h-[219px] top-[78px]  rounded-[50%] border-2 text-white bg-black flex justify-center items-center">
-        <h1 className="text-[27px]">Logo</h1>
+        <img src={logo} className=" rounded-[50%]"/>
       </div>
       <div className=" text-white bg-black text-[41px]">Welcome back!</div>
       </div>

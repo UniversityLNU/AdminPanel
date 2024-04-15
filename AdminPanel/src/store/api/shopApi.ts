@@ -4,7 +4,7 @@ import { ShopItemRequestModel } from "../../components/AdminPanelHome";
 
 export const shopApi = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://44e0-195-160-235-15.ngrok-free.app/api/Shop/",
+    baseUrl: "https://b001-46-211-5-106.ngrok-free.app/api/Shop/",
   }),
   reducerPath: "shopApi/api",
   endpoints: (builder) => ({

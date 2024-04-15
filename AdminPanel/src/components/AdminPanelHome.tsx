@@ -6,6 +6,7 @@ import { useGetUnapprovedFundraisingsQuery } from "../store/api/fundraisingApi";
 import { useApproveDeclineFundraisingMutation } from "../store/api/fundraisingApi";
 import { useGetAllShopItemsQuery, useUploadNewShopItemMutation } from "../store/api/shopApi";
 import ShopCard from "./ShopCard";
+import logo from "../assets/logo.png"
 
 export interface ShopItemRequestModel {
   title: string;
@@ -96,7 +97,7 @@ const AdminPanelHome = () => {
           ></div>
         </div>
         <div className="  w-[219px] h-[219px] top-[78px]  rounded-[50%] border-2 text-white bg-black flex justify-center items-center">
-          <h1 className="text-[27px]">Logo</h1>
+          <img src={logo} className=" rounded-[50%]"/>
         </div>
         <div className=" flex flex-col items-center self-center">
           <h1 onClick={onShopCheck} className=" text-white ml-9">

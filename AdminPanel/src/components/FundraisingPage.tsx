@@ -12,6 +12,7 @@ import { CreateFundraisingModel } from "../Models/FundraisingModel";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CheckIcon from '@mui/icons-material/Check';
 import logo from "../assets/Check.svg"
+import logo1 from "../assets/logo.png"
 
 const FundRaisingPage = () => {
   const [method, { data }] = useSetFundraisingMutation();
@@ -29,7 +30,7 @@ const FundRaisingPage = () => {
     description: "",
     email: "",
     fundraisingCompany: "",
-    fundraisingType: "",
+    fundraisingType: "Medical",
     fundraisingUrl: "",
     goal: 0,
     phoneNumber: "",
@@ -102,7 +103,7 @@ const FundRaisingPage = () => {
   };
   const onFundraisingTypeChangeHandler = (event: SelectChangeEvent) => {
     setForm((prev) => {
-      prev.email = event.target.value;
+      prev.fundraisingType = event.target.value;
       return prev;
     });
   };
@@ -114,7 +115,7 @@ const FundRaisingPage = () => {
   return (
     <div className=" bg-black w-full h-screen flex flex-col items-center pt-[99px]">
       <div className="  w-[219px] h-[219px] top-[78px]  rounded-[50%] border-2 text-white bg-black flex justify-center items-center">
-        <h1 className="text-[27px]">Logo</h1>
+        <img src={logo1} className=" rounded-[50%]"/>
       </div>
       <div className=" flex flex-col items-center">
         <div className=" flex gap-1 justify-center my-6">

@@ -5,7 +5,7 @@ import { FundraisingApproveDeclineRequest } from "../../Models/FundraisingApprov
 
 export const fundraisingApi = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://44e0-195-160-235-15.ngrok-free.app/api/Fundraising/",
+    baseUrl: "https://b001-46-211-5-106.ngrok-free.app/api/Fundraising/",
   }),
   reducerPath: "fundraising/api",
   endpoints: (build) => ({

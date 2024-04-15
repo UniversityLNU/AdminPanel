@@ -15,7 +15,7 @@ const ShopCard: React.FC<ShopCardProp> = ({itemId,description,itemImage,itemCoun
         <img className=" w-[260px] h-[224px]" src={itemImage}/>
         <h1 className=" font-bold w-[260px] text-center">{title}</h1>
         <h1 className=" w-[260px] text-center">{description}</h1>
-        <div className=" mx-auto">{price}</div>
+        <div className="rounded-[101px] bg-gradient-to-r from-[#ABAAFC] to-[#7978F7] w-fit mb-4 text-white py-[13px] px-[41px] mx-auto">{price}</div>
     </div>
 }
 
